@@ -2,7 +2,8 @@
 Naloga iz Programiranje1, ampak v C#
 
 
-#Navodila
+# Navodila za python
+*Nekatere stvari so prilagojene C#
 
 Ocena 6
 Sestavi razred Steza.
@@ -20,8 +21,6 @@ premik(smer) premakne kolesarja v podani smeri do polja, ko se mora ustaviti, ke
 Predpostavlja se, da bo metoda uporabila metodo konec podane steze. Če je ne bo, bodo testi javili napako.
 
 prevozeno() vrne skupno prevoženo razdaljo.
-
-
 
 Program (ovire so seznam ovir kot v prejšnji nalogi)
 
