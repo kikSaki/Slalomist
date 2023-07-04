@@ -5,13 +5,14 @@ Naloga iz Programiranje1, ampak v C#
 # Navodila za python
 *Nekatere stvari so prilagojene C#
 
-Ocena 6
+**Ocena 6**
 Sestavi razred Steza.
 
 Konstruktor prejme tri argumente: širino in višino kolesarske steze ter seznam s terkami ovir (y, x0, x1). Argument s širino in višino vsebuje številko zadnjega stolpca oz. vrstice kolesarske steze. Dovoljeni stolpci so torej od 1 do (vključno) širina. Vrstice so oštevilčene od zgoraj navzdol.
 zaprto(x, y) vrne True, če na polju s podanimi koordinatami stoji ovira.
 konec(x, y, smer) prejme koordinati nekega polja (na katerem ni ovire) in smer, ki je >, <, v ali ^. Vrniti mora koordinati polja, na katerem bi se ustavil kolesar, ki bi s podanega polja peljal v podano smer. Ustavi se na polju pred oviro oz. na polju pred robom kolesarske steze.
-Ocena 7
+
+**Ocena 7**
 Sestavi razred Kolesar.
 
 Konstruktor prejme koordinati x, y in kolesarsko stezo - objekt razreda Steza.
@@ -43,7 +44,7 @@ mora voziti kolesarja, kot kaže slika. Številke kažejo prevožene razdalje.
 
  
 
-Ocena 8
+**Ocena 8**
 Sestavi razred AvtonomniKolesar, ki je izpeljan iz razreda kolesar.
 
 Konstruktor prejme enake argumente kot kolesar, poleg tega pa še argument načrt, ki je niz, sestavljen iz znakov < in >.
@@ -66,7 +67,8 @@ kolesar = AvtonomniKolesar(12, 1, steza, "><<>><>")
 for _ in range(14):
     kolesar.premik()
 // načrt je predolg - se pač ne bo uporabil do konca
-Ocena 9
+
+**Ocena 9**
 Sestavi razred VzvratniKolesar, izpeljan iz razreda Kolesar.
 
 Konstruktor dopolnjuj po potrebi.
@@ -75,14 +77,12 @@ Metoda nazaj se vede kot "undo": kolesarja vrne za en korak nazaj, torej v stanj
 
 Metodo nazaj lahko pokličemo tudi večkrat zapored; kolesarja lahko vrnemo čisto do njegove začetne pozicije. Če kličemo metodo nazaj takrat, ko smo ga že vrnili do začetka, metoda ne stori ničesar.
 
-Ocena 10
+**Ocena 10**
 Sestavi razred PametniKolesar izpeljan iz razreda VzvratniKolesar.
 
 Razred ima metodo nacrt, ki poišče najkrajšo pot (to je, pot z najmanjšo prevoženo razdaljo) do zadnje vrstice. Kolesar se lahko premika le levo, desno in dol, pri čemer se, tako kot v prejšnjih nalogah, vedno pelje, dokler ne pride do ovire ali do roba poti.
 
 Funkcija mora vrniti par - dolžino prevožene poti in niz s potjo. Če pot z neke točke ni možna, funkcija vrne par (None, "").
-
-
 
 steza = Steza(17, 18, ovire)
 kolesar = PametniKolesar(12, 1, steza)
